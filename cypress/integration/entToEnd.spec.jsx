@@ -2,7 +2,11 @@ describe('End to end test for Timer', () => {
 
   before(() => {
 
-   cy.visit('http://localhost:3000')
+   cy.visit('http://timeloginclientservice')
+  })
+
+  it('should be true', () => {
+    expect(true).to.equal(true)
   })
 
   context('No existing timers', () => {
