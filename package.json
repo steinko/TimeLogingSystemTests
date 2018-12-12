@@ -1,0 +1,14 @@
+{
+  "name": "systemtests",
+  "version": "1.0.0",
+  "description": "system test for time loging ",
+  "scripts": {
+    "start": "cypress run",
+    "test": "cypress open",
+    "cypress": "cypress"
+  },
+  "author": "steinko",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,15 @@
+sudo: required
+
+language: minimal
+
+services:
+  - docker
+
+script:
+- docker build -t steinko/timeloginclient .
+- docker run steinko/timeloginclient ./app/cypress:run
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
