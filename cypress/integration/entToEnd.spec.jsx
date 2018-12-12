@@ -2,7 +2,7 @@ describe('End to end test for Timer', () => {
 
   before(() => {
 
-   cy.visit('http://timeloginclientservice')
+   cy.visit('http://timeloginclientservice:3000')
   })
 
   it('should be true', () => {
